@@ -1,0 +1,263 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import Card from '../components/Card.astro';
+
+const featuredPosts = [
+  {
+    title: 'User Research Methods for Product Managers',
+    image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    date: 'April 12, 2025',
+    url: '/blog/user-research-methods',
+    excerpt: 'A deep dive into effective user research methods that every product manager should know.',
+    tags: ['Product Management', 'UX Research']
+  },
+  {
+    title: 'My Journey Through the Alps: A Motorcycle Diary',
+    image: 'https://images.pexels.com/photos/2119713/pexels-photo-2119713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    date: 'March 28, 2025',
+    url: '/blog/alpine-motorcycle-journey',
+    excerpt: 'Reflecting on my two-week motorcycle adventure through the Swiss and Italian Alps.',
+    tags: ['Motorcycling', 'Travel']
+  },
+  {
+    title: 'Book Review: "Building Products That Matter"',
+    image: 'https://images.pexels.com/photos/1907785/pexels-photo-1907785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    date: 'February 10, 2025',
+    url: '/blog/building-products-review',
+    excerpt: 'My thoughts on this groundbreaking book about purpose-driven product development.',
+    tags: ['Books', 'Product Strategy']
+  }
+];
+
+const featuredProjects = [
+  {
+    title: 'HealthTrack Mobile App',
+    image: 'https://images.pexels.com/photos/4482896/pexels-photo-4482896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    url: '/projects/healthtrack',
+    excerpt: 'Led the redesign of a health tracking application, improving user engagement by 43%.',
+    tags: ['Mobile App', 'UX/UI', 'Health Tech']
+  },
+  {
+    title: 'EcoShop E-commerce Platform',
+    image: 'https://images.pexels.com/photos/5417639/pexels-photo-5417639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    url: '/projects/ecoshop',
+    excerpt: 'Developed strategy and roadmap for a sustainable products marketplace.',
+    tags: ['E-commerce', 'Sustainability', 'UX Research']
+  }
+];
+---
+
+<Layout 
+  title="John Doe | Product Manager & Motorcycle Enthusiast"
+  description="Product Manager with expertise in user-centered design and a passion for motorcycling, reading non-fiction, and writing."
+>
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-20 md:py-28 overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden z-0">
+      <div class="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5"></div>
+    </div>
+    
+    <div class="container-wide relative z-10">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-secondary-600 dark:from-primary-400 dark:to-secondary-400">
+              Hi, I'm John Doe
+            </span>
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+            Product Manager crafting digital experiences that <span class="font-medium">solve real problems</span> with empathy and precision.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <Button href="/projects" size="lg">
+              View My Work
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </Button>
+            <Button href="/contact" variant="outline" size="lg">
+              Get in Touch
+            </Button>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2 flex justify-center md:justify-end slide-in-right">
+          <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
+            <img 
+              src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              alt="John Doe" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- About Teaser -->
+  <section class="py-16 md:py-24 bg-white dark:bg-gray-900">
+    <div class="container-narrow">
+      <SectionHeading 
+        title="About Me" 
+        subtitle="Product visionary by day, motorcycle enthusiast by weekend, and lifelong learner always."
+        centered={true}
+      />
+      
+      <div class="prose prose-lg max-w-none dark:prose-invert mb-8">
+        <p>
+          I'm a dedicated product manager with over 8 years of experience creating digital products 
+          that users love. My approach combines analytical thinking with creative problem-solving, 
+          always keeping the user at the center of the process.
+        </p>
+        <p>
+          When I'm not crafting product strategies or conducting user research, you'll find me exploring 
+          back roads on my motorcycle, diving into the latest non-fiction books, or writing about my 
+          experiences and insights.
+        </p>
+      </div>
+      
+      <div class="flex justify-center">
+        <Button href="/about" variant="outline">
+          Learn More About Me
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </Button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Featured Projects -->
+  <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
+    <div class="container-wide">
+      <SectionHeading 
+        title="Featured Projects" 
+        subtitle="A selection of products and experiences I've helped build and improve."
+        centered={true}
+      />
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {featuredProjects.map(project => (
+          <Card 
+            title={project.title}
+            image={project.image}
+            imageAlt={project.title}
+            url={project.url}
+            tags={project.tags}
+          >
+            <p>{project.excerpt}</p>
+          </Card>
+        ))}
+      </div>
+      
+      <div class="flex justify-center mt-12">
+        <Button href="/projects">
+          View All Projects
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </Button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Blog Posts -->
+  <section class="py-16 md:py-24 bg-white dark:bg-gray-900">
+    <div class="container-wide">
+      <SectionHeading 
+        title="From My Blog" 
+        subtitle="Thoughts on product management, book reviews, and motorcycle adventures."
+        centered={true}
+      />
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {featuredPosts.map(post => (
+          <Card 
+            title={post.title}
+            image={post.image}
+            imageAlt={post.title}
+            date={post.date}
+            url={post.url}
+            tags={post.tags}
+          >
+            <p>{post.excerpt}</p>
+          </Card>
+        ))}
+      </div>
+      
+      <div class="flex justify-center mt-12">
+        <Button href="/blog">
+          Read More Articles
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </Button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Motorcycling Teaser -->
+  <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800 relative">
+    <div class="container-narrow relative z-10">
+      <SectionHeading 
+        title="Motorcycling Adventures" 
+        subtitle="Exploring the world on two wheels, one journey at a time."
+        centered={true}
+      />
+      
+      <div class="relative rounded-xl overflow-hidden h-80 md:h-96 mb-8 shadow-xl">
+        <img 
+          src="https://images.pexels.com/photos/2519374/pexels-photo-2519374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+          alt="Motorcycle journey through mountains" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+          <div class="p-6 md:p-8">
+            <h3 class="text-xl md:text-2xl font-bold text-white mb-2">The Pacific Coast Highway</h3>
+            <p class="text-gray-200">A 500-mile journey along one of America's most scenic routes.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex justify-center">
+        <Button href="/motorcycling">
+          View Motorcycling Journal
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </Button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="py-16 md:py-24 bg-primary-600 dark:bg-primary-700 text-white">
+    <div class="container-narrow text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Let's Work Together</h2>
+      <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+        Have a product challenge you're facing? Looking to collaborate on a project?
+        I'd love to hear from you.
+      </p>
+      <Button href="/contact" variant="secondary" size="lg">
+        Get in Touch
+      </Button>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  :global(.dark) .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+  }
+</style>

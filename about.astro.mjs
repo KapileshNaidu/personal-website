@@ -1,0 +1,119 @@
+/* empty css                                 */
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_D_CmcNH8.mjs';
+import 'kleur/colors';
+import { $ as $$Layout, a as $$SectionHeading } from '../chunks/SectionHeading_C6AOcC9L.mjs';
+import { $ as $$Button } from '../chunks/Button_BIn2MQwD.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$About = createComponent(($$result, $$props, $$slots) => {
+  const skills = [
+    { category: "Product Management", items: ["User Research", "Product Strategy", "Roadmapping", "Agile/Scrum", "Data Analysis", "A/B Testing"] },
+    { category: "Tools & Software", items: ["Figma", "Jira", "Confluence", "Amplitude", "Google Analytics", "Notion", "Miro"] },
+    { category: "Business", items: ["Market Research", "Competitive Analysis", "Stakeholder Management", "Product Marketing", "Business Modeling"] }
+  ];
+  const experiences = [
+    {
+      company: "TechVision",
+      title: "Senior Product Manager",
+      period: "2022 - Present",
+      description: "Lead product strategy and execution for the company's flagship SaaS platform. Collaborate with cross-functional teams to define product roadmap and deliver valuable features to enterprise customers.",
+      achievements: [
+        "Increased user retention by 27% through targeted feature improvements",
+        "Led the launch of 3 major product initiatives that grew revenue by $2.4M",
+        "Established a user research program that guides all product decisions"
+      ]
+    },
+    {
+      company: "InnovateCorp",
+      title: "Product Manager",
+      period: "2019 - 2022",
+      description: "Managed the full product lifecycle for a B2B analytics tool from conception to launch. Worked closely with engineering, design, and sales teams to ensure product-market fit.",
+      achievements: [
+        "Delivered a redesigned analytics dashboard that improved user engagement by 42%",
+        "Created and implemented a customer feedback loop that informed the product roadmap",
+        "Guided the team through an agile transformation that improved delivery speed by 30%"
+      ]
+    },
+    {
+      company: "StartupLabs",
+      title: "Associate Product Manager",
+      period: "2017 - 2019",
+      description: "Supported the product team in the development of a consumer mobile application. Focused on user research, feature specification, and quality assurance.",
+      achievements: [
+        "Conducted user interviews that led to pivotal product direction changes",
+        "Managed the beta testing program with over 500 participants",
+        "Created detailed product specs and collaborated with developers on implementation"
+      ]
+    }
+  ];
+  const education = [
+    {
+      institution: "Stanford University",
+      degree: "Master of Business Administration",
+      field: "Technology Management",
+      year: "2017"
+    },
+    {
+      institution: "University of California, Berkeley",
+      degree: "Bachelor of Science",
+      field: "Computer Science",
+      year: "2014"
+    }
+  ];
+  const certifications = [
+    { name: "Certified Scrum Product Owner (CSPO)", issuer: "Scrum Alliance", year: "2020" },
+    { name: "Product Management Certification", issuer: "Product School", year: "2018" },
+    { name: "Google Analytics Certification", issuer: "Google", year: "2019" }
+  ];
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "About Me | John Doe - Product Manager", "description": "Learn about John Doe's background, experience, and skills as a product manager with a passion for motorcycling and reading." }, { "default": ($$result2) => renderTemplate`  ${maybeRenderHead()}<section class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-20"> <div class="container-narrow"> <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16"> <div class="md:w-1/3"> <div class="relative rounded-xl overflow-hidden shadow-xl"> <img src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="John Doe" class="w-full aspect-[3/4] object-cover"> </div> </div> <div class="md:w-2/3"> <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+About Me
+</h1> <p class="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+I'm John Doe, a product manager with a passion for creating digital experiences that solve real problems. 
+            I believe that great products come from deeply understanding user needs and translating them into elegant solutions.
+</p> <div class="flex flex-wrap gap-4"> ${renderComponent($$result2, "Button", $$Button, { "href": "/contact" }, { "default": ($$result3) => renderTemplate`
+Get in Touch
+` })} ${renderComponent($$result2, "Button", $$Button, { "href": "/resume.pdf", "variant": "outline", "target": "_blank" }, { "default": ($$result3) => renderTemplate`
+Download Resume
+<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor"> <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path> </svg> ` })} </div> </div> </div> </div> </section>  <section class="py-16 md:py-24 bg-white dark:bg-gray-900"> <div class="container-narrow"> ${renderComponent($$result2, "SectionHeading", $$SectionHeading, { "title": "My Story", "subtitle": "The journey that shaped my approach to product management and life." })} <div class="prose prose-lg max-w-none dark:prose-invert"> <p>
+My journey into product management began with a foundation in computer science, which gave me a strong technical 
+          understanding of how products are built. After gaining hands-on experience as a developer, I realized my true passion 
+          was in bridging the gap between technical solutions and human needs.
+</p> <p>
+Over the past 8 years, I've had the privilege of working on products across various domains, from consumer 
+          mobile apps to enterprise SaaS platforms. Each experience has reinforced my belief that successful products 
+          require a balance of analytical thinking, user empathy, and business acumen.
+</p> <p>
+Outside of work, I'm an avid motorcycle enthusiast. There's something about the freedom of the open road that 
+          helps me clear my mind and gain new perspectives. My trips often involve remote locations where I can disconnect 
+          from technology and reconnect with nature.
+</p> <p>
+I'm also a voracious reader, primarily focusing on non-fiction books about business, psychology, and technology. 
+          I believe continuous learning is essential for personal and professional growth, and I often share my insights 
+          through my blog and at industry events.
+</p> <p>
+My approach to product management is guided by a few core principles:
+</p> <ul> <li>Always start with the user's needs and problems</li> <li>Make decisions based on data, not assumptions</li> <li>Embrace uncertainty and be willing to experiment</li> <li>Communicate clearly and transparently with all stakeholders</li> <li>Celebrate wins, learn from failures, and keep moving forward</li> </ul> <p>
+I'm constantly seeking new challenges and opportunities to create products that make a meaningful difference 
+          in people's lives. If you're working on something interesting or just want to connect, I'd love to hear from you!
+</p> </div> </div> </section>  <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800"> <div class="container-narrow"> ${renderComponent($$result2, "SectionHeading", $$SectionHeading, { "title": "Skills & Expertise", "subtitle": "Areas where I can add value to your product and team.", "centered": true })} <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> ${skills.map((skillSet) => renderTemplate`<div class="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6"> <h3 class="text-xl font-semibold text-primary-600 dark:text-primary-400 mb-4"> ${skillSet.category} </h3> <ul class="space-y-2"> ${skillSet.items.map((skill) => renderTemplate`<li class="flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-500 mr-2" viewBox="0 0 20 20" fill="currentColor"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path> </svg> <span class="text-gray-700 dark:text-gray-300">${skill}</span> </li>`)} </ul> </div>`)} </div> </div> </section>  <section class="py-16 md:py-24 bg-white dark:bg-gray-900"> <div class="container-narrow"> ${renderComponent($$result2, "SectionHeading", $$SectionHeading, { "title": "Professional Experience", "subtitle": "A timeline of my career journey and key accomplishments." })} <div class="space-y-12"> ${experiences.map((experience, index) => renderTemplate`<div class="relative pl-8 md:pl-0"> <div class="hidden md:block absolute top-0 bottom-0 left-[7.5rem] w-0.5 bg-gray-200 dark:bg-gray-700"></div> <div class="flex flex-col md:flex-row"> <div class="md:w-[7.5rem] flex-shrink-0 mb-4 md:mb-0"> <div class="hidden md:flex items-center h-6"> <div class="w-3 h-3 rounded-full bg-primary-500 z-10"></div> </div> <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 md:mt-0">${experience.period}</p> </div> <div class="md:pl-10 max-w-2xl"> <h3 class="text-xl font-bold text-gray-900 dark:text-white">${experience.title}</h3> <p class="text-lg font-medium text-primary-600 dark:text-primary-400 mb-4">${experience.company}</p> <p class="text-gray-700 dark:text-gray-300 mb-4">${experience.description}</p> <h4 class="text-sm font-semibold uppercase text-gray-500 dark:text-gray-400 mb-2">Key Achievements</h4> <ul class="space-y-2"> ${experience.achievements.map((achievement) => renderTemplate`<li class="flex items-start"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-500 mt-0.5 mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path> </svg> <span class="text-gray-700 dark:text-gray-300">${achievement}</span> </li>`)} </ul> </div> </div> </div>`)} </div> </div> </section>  <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800"> <div class="container-narrow"> ${renderComponent($$result2, "SectionHeading", $$SectionHeading, { "title": "Education & Certifications", "subtitle": "Formal qualifications and continued professional development." })} <div class="grid grid-cols-1 lg:grid-cols-2 gap-12"> <div> <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6">Education</h3> <div class="space-y-8"> ${education.map((edu) => renderTemplate`<div class="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6"> <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">${edu.institution}</h4> <p class="text-primary-600 dark:text-primary-400 mb-2">${edu.degree} in ${edu.field}</p> <p class="text-sm text-gray-500 dark:text-gray-400">Graduated ${edu.year}</p> </div>`)} </div> </div> <div> <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6">Certifications</h3> <div class="space-y-8"> ${certifications.map((cert) => renderTemplate`<div class="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6"> <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">${cert.name}</h4> <p class="text-primary-600 dark:text-primary-400 mb-2">${cert.issuer}</p> <p class="text-sm text-gray-500 dark:text-gray-400">Obtained ${cert.year}</p> </div>`)} </div> </div> </div> </div> </section>  <section class="py-16 md:py-20 bg-primary-600 dark:bg-primary-700 text-white"> <div class="container-narrow text-center"> <h2 class="text-3xl md:text-4xl font-bold mb-6">Interested in Working Together?</h2> <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+I'm always open to discussing product strategy, design challenges, or potential collaborations.
+</p> <div class="flex flex-wrap justify-center gap-4"> ${renderComponent($$result2, "Button", $$Button, { "href": "/contact", "variant": "secondary", "size": "lg" }, { "default": ($$result3) => renderTemplate`
+Contact Me
+` })} ${renderComponent($$result2, "Button", $$Button, { "href": "/resume.pdf", "variant": "outline", "size": "lg", "class": "bg-transparent border-white text-white hover:bg-white/10", "target": "_blank" }, { "default": ($$result3) => renderTemplate`
+Download Resume
+<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor"> <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path> </svg> ` })} </div> </div> </section> ` })}`;
+}, "/home/project/src/pages/about.astro", void 0);
+
+const $$file = "/home/project/src/pages/about.astro";
+const $$url = "/about";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$About,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };
